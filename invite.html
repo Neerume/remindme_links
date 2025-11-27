@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Open RemindMe</title>
+  <script>
+    function openApp() {
+      const params = new URLSearchParams(location.search);
+      const role = params.get('role') || 'caregiver';
+      const inviterId = params.get('inviterId') || '';
+      const inviterName = params.get('inviterName') || '';
+      const deepLink = `remindme://app/invite?role=${encodeURIComponent(role)}&inviterId=${encodeURIComponent(inviterId)}&inviterName=${encodeURIComponent(inviterName)}`;
+      window.location.replace(deepLink);
+      setTimeout(() => {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.example.remindme';
+      }, 1500);
+    }
+  </script>
+</head>
+<body onload="openApp()">
+  <p>Opening RemindMe…</p>
+  <a href="https://play.google.com/store/apps/details?id=com.example.remindme">Install RemindMe</a>
+</body>
+</html>
