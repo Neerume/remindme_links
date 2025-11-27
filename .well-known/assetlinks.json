@@ -1,11 +1,11 @@
-  [
+[
   {
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target": {
       "namespace": "android_app",
       "package_name": "com.example.remindme",
       "sha256_cert_fingerprints": [
-        "AA:BB:CC:DD:..."
+        "A5:6C:4E:D1:8A:41:8B:BE:B5:82:82:83:3A:DF:1A:D3:EA:02:A8:D7:76:D3:37:6D:99:81:EB:E7:16:91:D8:46"
       ]
     }
   }
